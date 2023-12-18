@@ -16,5 +16,4 @@ func SetupAssetRoute(router fiber.Router, assetService services.AssetsServices) 
 	assets.Get("/", assetController.ShowAll)
 	assets.Put("/update/:id", assetController.Update)
 	assets.Delete("/delete/:id", assetController.Delete)
-
 }
